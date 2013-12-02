@@ -1,0 +1,75 @@
+\ProvidesPackage{mystyle}
+	%\usefonttheme[onlylarge]{structuresmallcapsserif}
+	%\usefonttheme[onlysmall]{structurebold}
+
+\mode<presentation>{
+	%\usetheme{Berlin}
+	\usetheme{CambridgeUS}
+	\setbeamercovered{transparent}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Matt's Libraries %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% Language specifications.
+\usepackage{fontspec}
+\usepackage{polyglossia}
+%\setdafaultlanguage{english}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+
+
+	% Math
+%\usepackage{amssymb} 
+\usepackage{amsmath} 
+\usepackage{amsthm}  
+\usepackage{amsfonts}
+%\usepackage{natbib}
+
+	% Chemistry
+\usepackage[version=3]{mhchem}
+
+	% Text formatting
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\definecolor{adriatico}{rgb}{.2,.40,.90}
+\definecolor{red}{rgb}{.8,.3,.1}
+\definecolor{green}{rgb}{.2,.8,.1}
+\definecolor{brownie}{rgb}{.174,.104,.43}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{peach}{rgb}{1,.97,1}
+\definecolor{rosemadder}{rgb}{.89, .21, .22}
+\definecolor{oldlace}{rgb}{.99,.96,.9}
+\definecolor{gummi_red}{rgb}{.99, .08, .0}	
+\definecolor{titaniumwhite}{rgb}{.99, 1, .94}
+
+
+\newcommand{\rvec}{\boldsymbol{\mathrm{r}}}
+\newcommand{\Evec}{\boldsymbol{\mathrm{E}}}
+\newcommand{\Bvec}{\boldsymbol{\mathrm{B}}}
+\newcommand{\prob}{\mathcal{P}}	
+\newcommand{\aaa}{\mathbb{A}}
+\newcommand{\sss}{\mathbb{S}}
+\newcommand{\yy}{\mathfrak{y}}
+\newcommand{\normal}[2]{\mathcal{N}(#1, #2)}
+\newcommand{\tran}{\mathrm{t}}
+
+\newcommand{\sprod}[2]{\langle #1|#2 \rangle}
+
+\newcommand{\framedGraphic}[2] {
+    \begin{frame}{#1}
+        \begin{center}
+            \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{#2}
+        \end{center}
+    \end{frame}
+}
+
+\newcommand{\framedPlainGraphic}[2] {
+    \begin{frame}[plain]
+        \begin{center}
+            \includegraphics[#1,keepaspectratio]{#2}
+        \end{center}
+    \end{frame}
+}
