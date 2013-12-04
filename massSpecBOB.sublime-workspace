@@ -523,31 +523,15 @@
 			"file": "massSpecModelling.tex",
 			"settings":
 			{
-				"buffer_size": 6761,
+				"buffer_size": 19262,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.tex",
+			"file": "mystyle.sty",
 			"settings":
 			{
-				"buffer_size": 20409,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matteo/Documents/Scienza/mimuwStudies/Seminar_Gaussian_Processes/processes.tex",
-			"settings":
-			{
-				"buffer_size": 22094,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex",
-			"settings":
-			{
-				"buffer_size": 17114,
+				"buffer_size": 2064,
 				"line_ending": "Unix"
 			}
 		}
@@ -636,12 +620,18 @@
 	},
 	"file_history":
 	[
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/secondTry/massTodons.R",
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/BOB/massSpecModelling.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/tex/gaussianMixtures.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/BOB/mystyle.sty",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/mystyle.sty",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/tex/mathAppendix.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/secondTry/massTodons.R",
+		"/home/matteo/Documents/Scienza/scientificProjects/parallelTempering/againMaster/parallelMasterThesis/mystyle.sty",
+		"/home/matteo/Documents/Scienza/mimuwStudies/Seminar_Gaussian_Processes/processes.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/BOB/massSpecModelling.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/mystyle.sty",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.pdf",
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/BOB/quicky.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/secondTry/test.R",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/secondTry/warehouses.R",
@@ -674,8 +664,6 @@
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/educator/Physical_preparation.txt",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/educator/someBiomeleculesEnlisted.R",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/ETD_ETnoD_PTR.tex",
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/tex/gaussianMixtures.tex",
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/tex/mathAppendix.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/ETD_ETnoD_PTR.out",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/algorithms.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/metropolisHastings.R",
@@ -683,7 +671,6 @@
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realTemperedStateSpaces.R",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/.gitignore",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/educator/electronTransferDissociation.tex",
-		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/mystyle.sty",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/TDE_TDnoD_PTR.log",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/implementation.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/motivation.tex",
@@ -760,10 +747,7 @@
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/abstract.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
-		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex"
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty"
 	],
 	"find":
 	{
@@ -781,6 +765,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"human",
+			"extra",
+			"multino",
 			"under",
 			"include",
 			"generating ",
@@ -905,10 +892,7 @@
 			"didNotOccur",
 			"makeUsage",
 			"=",
-			"<-H",
-			"<-3HH",
-			"<-3H",
-			"<-3"
+			"<-H"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1062,15 +1046,15 @@
 					"file": "massSpecModelling.tex",
 					"settings":
 					{
-						"buffer_size": 6761,
+						"buffer_size": 19262,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3898,
-								3898
+								1652,
+								1652
 							]
 						],
 						"settings":
@@ -1079,7 +1063,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1377.0,
+						"translation.y": 208.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1087,86 +1071,33 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.tex",
+					"file": "mystyle.sty",
 					"settings":
 					{
-						"buffer_size": 20409,
+						"buffer_size": 2064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13191,
-								13191
+								811,
+								811
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/LaTeX/TeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7323.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/matteo/Documents/Scienza/mimuwStudies/Seminar_Gaussian_Processes/processes.tex",
-					"settings":
-					{
-						"buffer_size": 22094,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14865,
-								14865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex",
-					"settings":
-					{
-						"buffer_size": 17114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1255,
-								1255
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 361.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1227,6 +1158,18 @@
 		"selected_items":
 		[
 			[
+				"myst",
+				"mystyle.sty"
+			],
+			[
+				"mys",
+				"mystyle.sty"
+			],
+			[
+				"mystyl",
+				"mystyle.sty"
+			],
+			[
 				"under",
 				"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex"
 			],
@@ -1236,10 +1179,6 @@
 			],
 			[
 				"my",
-				"mystyle.sty"
-			],
-			[
-				"myst",
 				"mystyle.sty"
 			],
 			[
@@ -1329,10 +1268,6 @@
 			[
 				"bib",
 				"ideas/additionalNeutrons/tex/bibliography.tex"
-			],
-			[
-				"mys",
-				"ideas/additionalNeutrons/mystyle.sty"
 			],
 			[
 				"mystl",
