@@ -15,7 +15,6 @@
 *.R~
 *.Rout
 *.synctex.gz
-*.tex
 *.csv
 *.sh
 *.aux

@@ -620,6 +620,8 @@
 	},
 	"file_history":
 	[
+		"/home/matteo/Documents/Netia",
+		"/home/matteo/Downloads/Academic Paper.html",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/vignettes/tex/gaussianMixtures.tex",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/massSpecPresentation/massSpecModelling.tex",
@@ -745,9 +747,7 @@
 		"/home/matteo/Documents/Scienza/Latex/Poligon/tikz-er2.sty",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
-		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex",
-		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty"
+		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex"
 	],
 	"find":
 	{
@@ -1053,8 +1053,8 @@
 						"selection":
 						[
 							[
-								1652,
-								1652
+								785,
+								785
 							]
 						],
 						"settings":
@@ -1063,7 +1063,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 208.0,
+						"translation.y": 106.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
