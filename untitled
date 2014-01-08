@@ -1,0 +1,15 @@
+isotopeMasses 	<<- list(
+				C = c(12.0000000000, 13.0033548378),
+				H = c(1.0078250321, 2.0141017780),
+				N = c(14.00307400522, 15.0001088984),
+				O = c(15.9949146, 16.9991312, 17.9991603),
+				S = c(31.97207070, 32.97145843, 33.96786665, 0, 35.96708062)
+			)
+
+isotopeMasses$H[2]+
+isotopeMasses$H[1]+
+isotopeMasses$O[2]
+
+isotopeMasses$H[1]+
+isotopeMasses$H[1]+
+isotopeMasses$O[3]

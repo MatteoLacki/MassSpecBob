@@ -520,23 +520,23 @@
 	"buffers":
 	[
 		{
-			"file": "massSpecModelling.tex",
+			"file": "massSpecPolish.tex",
 			"settings":
 			{
-				"buffer_size": 19262,
+				"buffer_size": 20664,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mystyle.sty",
+			"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/MassTodon.R",
 			"settings":
 			{
-				"buffer_size": 2064,
+				"buffer_size": 4188,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system": "Packages/User/LaTeX.sublime-build",
 	"command_palette":
 	{
 		"height": 392.0,
@@ -620,6 +620,11 @@
 	},
 	"file_history":
 	[
+		"/home/matteo/Documents/Scienza/scientificProjects/parallelMasterThesis/tex/implementation/implementation.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/parallelMasterThesis/mystyle.sty",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/MassSpecBob/mystyle.sty",
+		"/home/matteo/Documents/Scienza/scientificProjects/parallelMasterThesis/tex/implementation/divisionIntoObjects.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/MassSpecBob/massSpecModelling.tex",
 		"/home/matteo/Documents/Netia",
 		"/home/matteo/Downloads/Academic Paper.html",
 		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/tex/PoissonApproximation.tex",
@@ -742,12 +747,7 @@
 		"/etc/apt/sources.list",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/citationCommand.tex",
-		"/home/matteo/Documents/Scienza/Latex/Poligon/tikz-er2.sty",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
-		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex"
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib"
 	],
 	"find":
 	{
@@ -765,6 +765,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tilde",
 			"human",
 			"extra",
 			"multino",
@@ -891,8 +892,7 @@
 			"sql",
 			"didNotOccur",
 			"makeUsage",
-			"=",
-			"<-H"
+			"="
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1029,7 +1029,7 @@
 			"spaceDim",
 			"initializeParallelTempering"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -1043,18 +1043,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "massSpecModelling.tex",
+					"file": "massSpecPolish.tex",
 					"settings":
 					{
-						"buffer_size": 19262,
+						"buffer_size": 20664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								785,
-								785
+								15422,
+								15422
 							]
 						],
 						"settings":
@@ -1063,41 +1063,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 106.0,
+						"translation.y": 9636.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "mystyle.sty",
+					"file": "/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/projects/ETD_ETnoD_PTR/Rproject/MassTodon.R",
 					"settings":
 					{
-						"buffer_size": 2064,
+						"buffer_size": 4188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								811,
-								811
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/TeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/R/R.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 361.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1122,18 +1115,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1145,7 +1131,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 59.0
+		"height": 282.0
 	},
 	"replace":
 	{
@@ -1157,6 +1143,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"my",
+				"mystyle.sty"
+			],
+			[
+				"myste",
+				"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/presentations/MassSpecBob/massSpecPolish.tex"
+			],
 			[
 				"myst",
 				"mystyle.sty"
@@ -1176,10 +1170,6 @@
 			[
 				"mas",
 				"massSpecModelling.tex"
-			],
-			[
-				"my",
-				"mystyle.sty"
 			],
 			[
 				"mass",
