@@ -17,7 +17,7 @@
 
 	%\beamerdefaultoverlayspecification{<+->}
 	\date{9 Stycznia 2014} 
-	\author[Matteo]{Mateusz Łącki}
+	\author[Matteo]{Frederik Lermyte, Mateusz Łącki}
 	\institute[UW]{Uniwersytet Warszawski}
 	\titlegraphic{\includegraphics[scale=.10 , keepaspectratio]{./picts/eagle3.png}}
 	
@@ -45,7 +45,7 @@
 				\item Bada skład molekularny próbek
 				\item Wynik pomiaru:
 				\begin{itemize}
-					\item[$\star$] $\Big\{ \frac{\text{Masa}_j}{\text{Ładunek}_j}, \text{Intensywność}_j \Big\}_j^{J}$ 
+					\item[$\star$] $\Big\{ \frac{\text{Masa}_j}{\text{Ładunek}_j}, \text{Intensywność}_j \Big\}_{j=1}^{J}$ 
 				\end{itemize}
 			\end{itemize}
 			\item Technologia MS/MS 
@@ -61,8 +61,20 @@
 		\end{itemize}
 	\end{frame}
 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\framedGraphic{Przydatna Analogia}{./picts/puzzles.pdf}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{frame}\frametitle{Zarys rozwiązania problemu}
+		\begin{itemize}
+			\item 	Wygenerowanie listy teoretycznie występujących związków chemicznych
+			\item  	Dobranie do związków ich rozkładów teoretycznych
+			\item  	Zrzutowanie spektrum empirycznego na sympleks rozpięty przez rozkłady teoretyczne
+		\end{itemize}
+	\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 	\begin{frame}\frametitle{Dzisiejszy Program}
 		\tableofcontents
 	\end{frame}
@@ -100,9 +112,9 @@
 			\item Molekuła = \molecule
 			\item Założenia
 			\begin{itemize}
-				\item 	Dużo niezależności: izotop danego atomu \molecule (np. \ce{C}) nie zależy od izotopów pozostałych atomów
+				\item 	Izotop danego atomu \molecule nie zależy od izotopów pozostałych atomów
 				\begin{itemize}
-					\item[np.]  molekuła trój-atomowa wody
+					\item[np.]  molekuła trój-atomowa wody \ce{H_2 O}
 				\end{itemize}				  
 				$$\prob( \cem{^{1}H ^{2}H ^{17}O} ) = 
 					\prob( \cem{^{1}H} ) \times \prob( \cem{^{2}H} ) \times \prob( \cem{ ^{17}O} ) $$
@@ -149,21 +161,24 @@
 			\begin{itemize}
 				\item[$\star$] $m_W = \cem{c_{12}} m_\cem{^{12}C} + \dots + \cem{s_{36}} m_\cem{^{36}S}$
 
+				\item[]
 				\item[$\star$] $\prob( \text{Masa Molekuły} = m ) = 
 					\sum_{W: m_W = m} \prob(
 						\cem{c_{12}} \cem{^{12}C}, 
 						\dots, 
 						\cem{s_{36}} \cem{^{36}S} )$
-				\item[s.t.] $m_W = \cem{c_{12}} m_\cem{^{12}C} + \dots + \cem{s_{36}} m_\cem{^{36}S}$
-				\item[:)] Wzór $W \rightarrow$ miara $p_W \rightarrow \rightarrow$
-				\item[:(] Ilość pików rośnie.  
+				\item[że] $m_W = \cem{c_{12}} m_\cem{^{12}C} + \dots + \cem{s_{36}} m_\cem{^{36}S}$
+				\item[]
+				\item[:)] Wzór $W \rightarrow$ miara $p_W$
+				\item[:(] Będzie dużo miar.  
 			\end{itemize}
-			\item Fakt
+			\item[]
+			\item 	Fakt
 			\begin{itemize}
 				\item 	Dodatkowe neutrony zmieniają masę pierwiastków różnorako   
 				\item  	Różnice są możliwe do zaobserwowania w spektroskopie
 			\end{itemize}
-			\item[$\bigstar$] Algorytm BRAIN zaniedbuje powyższą właściwość materii
+			\item[$\bigstar$] 	Algorytm BRAIN zaniedbuje powyższą właściwość materii
 		\end{itemize}
 
 
@@ -356,7 +371,7 @@
 					\spadesuit^C_{L,\tilde{p}_1, \tilde{q}_1},\, 
 					\spadesuit^Z_{L,\tilde{p}_2, \tilde{q}_2} \} $$
 				\item  
-					$$ \text{Reakcje}= \{ r_1 r_2 \dots r_k : r_i \text{ to reakcja cząstkowa i jest OK} \} $$
+					$ \text{Reakcje}= \{ r_1 r_2 \dots r_k : r_i \text{ to reakcja cząstkowa i jest OK} \} $
 				\item[np.] $\Big(\clubsuit^C_{L, 2,1} \heartsuit$ $\heartsuit \diamondsuit\Big)$ może być OK jeśli 
 
 				\begin{itemize}
@@ -367,7 +382,7 @@
 			
 			\end{itemize}
 
-			\item 	Wynik pełny: lista trójek $\Biggl\{[W, p_W, q_W]\Biggl\}_{W \in \text{Reacje}}$  
+			\item 	Wynik pełny: lista trójek $\Biggl\{[W, p_W, q_W]\Biggl\}_{W \in \text{Reakcje}}$  
 		\end{itemize}
 	\end{frame}
 
@@ -383,6 +398,7 @@
 				\item 	$W \rightarrow$ Model Wielomianowy $\rightarrow$ Rozkład masy $m_W \rightarrow$ 
 					$$ \prob\Big(\frac{m_R}{z_R}\Big)  = \prob\Big(\frac{m_W + p + q}{p}\Big) = p_W (m_W)$$
 			\end{itemize}
+
 		\end{itemize}
 	\end{frame}
 
@@ -391,13 +407,17 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{frame}\frametitle{Konsekwencje zaniedbania czasu}	
 		\begin{itemize}
+			
 			\item Niektóre reakcje dają te same wyniki!
 				$$\heartsuit \diamondsuit = \diamondsuit \heartsuit$$
+			
 			\begin{itemize}
 				\item Model abstrahuje od czasu przeprowadznia reakcji
-				\item Rozróżnialne Reakcje $\subset$ Reakcje
-				\item Reakcje $:=$ Klasy Równoważności w zbiorze Reakcji 
 			\end{itemize}
+			
+			\item Reakcje $:=$ Klasy Równoważności w zbiorze Reakcji 
+
+			\item[Cel:] Rozbicie spektrum empirycznego na składowe odopowiadające różnym Reakcjom.
 		\end{itemize}
 	\end{frame}
 
@@ -406,16 +426,18 @@
 	\begin{frame}\frametitle{Doprecyzowanie Hipotezy Badawczej} 
 		\begin{itemize}
 			\item 	Spektrum Empiryczne: $y = \Big\{ (\frac{m_j}{z_j}, I_j) \Big\}_{j = 1}^{J}$
-			\item[] Hipoteza
+			\item  	$y$ indukuje prawdopodobieństwo na $[0,\infty)$: $\probI$
+			\item[] Hipoteza:
 			\begin{itemize}
-				\item[$\star$] $I_j = \sum_{R \in \text{Reakcje}} \alpha_R \prob(\frac{m_R}{z_R}) + \text{Błąd}$
-				\item[że] $\alpha_R \geq 0,$ 
-				\item[i] $\sum_R \alpha_R \leq 1$
+				\item[]
+				\item[$\star$] $\probI = \sum_{R \in \text{Reakcje}} \alpha_R \prob(\frac{m_R}{z_R}) + \text{Błąd},$
+				\item[]
+				\item[że] $\alpha_R \geq 0,$ oraz $\sum_R \alpha_R \leq 1$
 			\end{itemize}
 			\item[]
-			\item 	Potrzeba oprogramowania które
+			\item 	MassTodon:
 			\begin{itemize}
-				\item 	znajduje zbiór nierozróżnialnych reakcji $R$
+				\item 	znajduje zbiór nierozróżnialnych Reakcji
 				\item 	estymuje $\alpha_R$ minimalizując błąd
 			\end{itemize}
 		\end{itemize}
@@ -426,52 +448,23 @@
 
 	\framedPlainGraphic{width=\textwidth}{./picts/spectraShiftsAndWeights.png}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\begin{frame}\frametitle{massTodon}
-		\begin{itemize}
-			\item 	Prototyp istnieje
-			\begin{figure}
-				\begin{tikzpicture}
-					[-,thick,%
-					  every node/.style={shape=rectangle,inner sep=3pt,draw,thick}]
-					\footnotesize
-					\node {MassTodon}
-					  [sibling distance=4cm]
-					  child {node {Formuler}
-					  	child {node {Metropolis-Hastings}
-					  		child {node {Parallel Tempering}	
-					  		}
-					  	}	
-					  }
-					  child {node {Fitter}
-					    child {node {Real}
-					    	child {node {Real Tempered}
-					    	}
-					    }
-					  }
-					  child {node {Ware}
-					    [sibling distance=3cm]
-					    child {node {Liang}
-					    	child {node {Matteo}}
-					    }
-					    child {node {Unnormalised Densities}}
-					  };
-				\end{tikzpicture}
-				\caption{Current operational entity-relations diagram.}\label{objectStructure}
-			\end{figure}
-			Stupid fitting procedure: does not use BRAIN
-		\end{itemize}
+	
+	\begin{frame}\frametitle{MassTodon: prototyp}	    
+	    \begin{center}
+	        \includegraphics[width=\textwidth,keepaspectratio]{./picts/entityDiagramme.pdf}
+	    \end{center}
 	\end{frame}
 
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}\frametitle{Kernelizacja}
+	\begin{frame}\frametitle{Kernelizacja: Gaussian}
 
 		\begin{itemize}
 			\item $y = \Big\{ (\frac{m_j}{z_j}, I_j) \Big\}_{j = 1}^{J}$
-			\item Ale może lepiej wygładzić wszystko?
+			\item $\probI = $ wygładzone $y$:
 				$$ y(z) = \sum_{j=1}^J I_j \times y_j (z)$$
 			\begin{itemize}
-			 	\item[s.t.]$y_j (z) = \frac{1}{\sqrt{\pi \sigma^2}} e^{-\frac{(z-\mu)^2}{\sigma^2}}$ 
+			 	\item[takie, że]$y_j (z) = \frac{1}{\sqrt{\pi \sigma^2}} e^{-\frac{(z-\mu)^2}{\sigma^2}}$ 
 			 	\item[]$\mu = \frac{m_j}{z_j}$
 			\end{itemize} 
 		\end{itemize}
@@ -480,97 +473,151 @@
 	\framedPlainGraphic{width=\textwidth}{./picts/kernelisation.png}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{frame}\frametitle{Gaussian Approximation to Multinomial Model}
+	\begin{frame}\frametitle{Gaussian: wykorzystanie CTG}
 
 		\begin{itemize}
-			\item[] Human Dynein: \ce{C_{23832} H_{37816} N_{6528} O_{7031} S_{170}}			
+			\item[] Ludzka Dyneina: \ce{C_{23832} H_{37816} N_{6528} O_{7031} S_{170}}			
 		\end{itemize}
 
 		\begin{center}
 			\includegraphics[width=.8\textwidth, keepaspectratio]{./picts/humanDynein.png}
 		\end{center}
-	\end{frame}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
-	\begin{frame}\frametitle{Gaussian Approximation to Multinomial Model}
 
 		\begin{itemize}
-			\item Theoretical Spectra: $\Big\{ f_R(z) \Big\}_{R \in \text{Reactions}}$
-			\item Empirical Spectrum: $y(z)$
-			\item Linear model:
+			\item[Ergo] Zamiast $p_R$ wykorzystać $f_R$ - gęstości z CTG
+		\end{itemize}
+	\end{frame}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}\frametitle{Kernelizacja: zapis problemu}
+
+		\begin{itemize}
+			\item 	Spektrum teoretyczne: $\Big\{ f_R(z) \Big\}_{R \in \text{Reactions}}$
+			\item 	Spektrum empriczne (gęstość $\probI$): $y(z)$
+			\item 	Model liniowy:
 			$$ y(z) = \sum_{R} \alpha_R f_R (z) + \epsilon(z)$$
-			\item Usual least squares humbug
+			\item 	Oczywista analiza kwadratowa:
 			$$ ||\epsilon||^2 = \Big|\Big| y - \sum_{R} \alpha_R f_k \Big|\Big|^2 \rightarrow \min$$
 			\begin{itemize}
-				\item[s.t.] $\alpha_R \geq 0$
-				\item[s.t.] $\sum_R \alpha_R \leq 1$
-				\item[where] $ ||y||^2 = \sprod{y}{y} =  \int_\real y(x)^2 \mathrm{d}\,x.$ 
+				\item[takie, że] $\alpha_R \geq 0$,
+				\item[oraz] $\sum_R \alpha_R \leq 1$,
+				\item[gdzie] $ ||y||^2 = \sprod{y}{y} =  \int_\real y(x)^2 \mathrm{d}\,x.$ 
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
-	\begin{frame}\frametitle{Gaussian Approximation to Multinomial Model}
+	\begin{frame}\frametitle{Rozwiązanie problemu}
 
 		$$ \Big|\Big| y - \sum_{R} \alpha_R f_k \Big|\Big|^2 = || y ||^2 - 2 \alpha^\tran \mathfrak{m} + \alpha^\tran \mathfrak{H} \alpha$$ 
 
 		\begin{itemize}
-			\item[where] $\mathfrak{m}^\tran = [ \dots, \sprod{y}{f_R}, \dots ]$
-			\item[and] $\mathfrak{H} = [\sprod{f_R}{f_P}]_{R,P \in \text{Reactions}}$
+			\item[gdzie] $\mathfrak{m}^\tran = [ \dots, \sprod{y}{f_R}, \dots ]$
+			\item[oraz] $\mathfrak{H} = [\sprod{f_R}{f_P}]_{R,P \in \text{Reakcje}}$
 			\item[] 			
-			\item Easy to evaluate scalar product 
-			$$ m(z) = \frac{1}{\sqrt{\pi \sigma^2}} e^{-\frac{(z-\mu)^2}{\sigma^2}}\text{ and } 
+			\item 	Ewaluacja Produktu skalarnego:
+			$$ m(z) = \frac{1}{\sqrt{\pi \sigma^2}} e^{-\frac{(z-\mu)^2}{\sigma^2}}\text{ i } 
 n(z) = \frac{1}{\sqrt{\pi \eta^2}} e^{\frac{(z-\eta)^2}{\nu^2}}
 $$
 			$$\sprod{m}{n} = \int_\real m(z)n(z) \mathrm{d}\,z  = \frac{1}{\sqrt{\pi (\sigma^2 + \nu^2)}}e^{-\frac{(\mu-\eta)^2}{\sigma^2+\nu^2}}$$  
-			\item This problem is numerically very nice
+			\item 	Dodatkowe własności numeryczne
 			\begin{itemize}
-				\item The Gramm Matrix is diagonally dominant, well conditioned. 
+				\item 	Macierz Gramma ma dominującą przekątną
+				\item  	Dobre uwarunkowanie
 			\end{itemize}
 		\end{itemize}
 
 	\end{frame}
 
-	\framedGraphic{Theoretically Explained Spectrum}{./picts/spectrum.png}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
-\section[Plans]{What remains to be done?}
+	\framedGraphic{Teoretycznie objaśnione spektrum}{./picts/spectrum.png}
 
-	\begin{frame}\frametitle{Whole lotta of things to do}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+	\begin{frame}\frametitle{Sticks: chemist-friedliness}
 		\begin{itemize}
-			\item Algorithmically 
+			\item 	Zaniedbujemy różnice w masach dodatkowych neutronów
+			\item 	BRAIN $\rightarrow$ generuje $p_R$
+			\item 	Problem z budową zmiennej objaśnianej i zmiennych objaśniających
 			\begin{itemize}
-				\item Optimise generation of Reactions: 
+				\item 	Zmienność w wynikach pomiarów na poziome $0.1$ Th  	
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+	\begin{frame}[plain]
+	    \begin{center}
+	        \includegraphics[height=.9\textheight,keepaspectratio]{./picts/sticks}
+	    \end{center}
+	\end{frame}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+	\begin{frame}[plain]
+	    \begin{center}
+	        \includegraphics[height=.5\textheight,keepaspectratio]{./picts/sticks2}
+	    \end{center}
+
+		\begin{align*}
+			z_1 &= \alpha x_1 + \epsilon_1 \\
+	    	z_2 &= \alpha x_1 + \beta y + \epsilon_2 \\
+	    	z_3 &= \beta x_2 + \epsilon_3 
+		\end{align*}
+
+	\end{frame}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+	\begin{frame}\frametitle{Problem z patykami}
+	    
+
+	    \begin{center}
+	        \includegraphics[height=.5\textheight,keepaspectratio]{./picts/sticks3}
+	    \end{center}
+
+		\begin{itemize}
+			\item Jak klasyfikować spektrum empiryczne w tym przypadku?
+		\end{itemize}
+
+	\end{frame}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+	\begin{frame}\frametitle{GaussianSticks}
+	    
+
+	    \begin{center}
+	        \includegraphics[height=.5\textheight,keepaspectratio]{./picts/sticks4}
+	    \end{center}
+
+		\begin{itemize}
+			\item Rozmywamy wyniki uzyskane z BRAINa
+			$$ f_R (x) = \sum_{\frac{m}{z} \in \text{Nośnik}_R} p_R \Big( \frac{m}{z} \Big) \times g \Biggl( \frac{x-\frac{m}{z}}{\sigma_R} \Biggl) $$
+		\end{itemize}
+
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%xetex%%%%%%%%%%%%%
+
+\section[Plany]{Co pozostaje do zrobienia?}
+
+	\begin{frame}\frametitle{Pozostałe rzeczy do zrobienia}
+		\begin{itemize}
+			\item Algorytmika
+			\begin{itemize}
+				\item 	Zoptymalizować proces generowania nierozróżnialnych reakcji
 				\begin{itemize}
 					\item $\heartsuit \diamondsuit = \diamondsuit \heartsuit$
 				\end{itemize}
-				\item Calibrate fitting procedures: 
-				\begin{itemize}
-					\item stick spectra more jazzy among chemists
-					\item no-one uses gaussian approximations
-				\end{itemize}
-				\item Derive quick procedures for stick spectra generation: modify BRAIN.
+				\item 	Dodanie procedury \textsc{GaussianSticks}
+				\item 	Porównia procedur dopasowujących 
 			\end{itemize}
-			\item Experimentally
+			\item  	Empiria
 			\begin{itemize}
-				\item More substances to analyze
-				\item Mixtures of substances 
+				\item 	Analiza większej liczby substancji
+				\item 	Mieszanki różnych substancji
 			\end{itemize}
-			\item Pragmatically
+			\item 	Cel ostateczny?
 			\begin{itemize}
-				\item What if the substance is not known?
+				\item 	Wykorzystanie $\alpha$ do charakteryzacji substancji?
+				\item 	Następny krok: rozszerzenie o dynamikę reakcji
 			\end{itemize}
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}\frametitle{massTodon potential}
-		\begin{itemize}
-			\item Understanding ETD statics
-			\item Next step : understand dynamics
-			\item Quantitative approach : potential characterisation of peptides through the use of MASS SPEC.
-			\begin{itemize}
-				\item But not certain yet how to do it yet
-			\end{itemize}
-
 		\end{itemize}
 	\end{frame}
 
